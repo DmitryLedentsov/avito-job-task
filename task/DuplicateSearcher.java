@@ -21,7 +21,7 @@ public class DuplicateSearcher implements Searcher{
         if(N<0) throw new NotEnoughSizeException();
         for (int i=0; i<N; i++){
             int cur = arr[i];
-            if(unique.contains(cur)) repeating.add(cur);
+            if(unique.contains(cur) && !repeating.contains(cur)) repeating.add(cur);
             else unique.add(cur);
         }
     }
