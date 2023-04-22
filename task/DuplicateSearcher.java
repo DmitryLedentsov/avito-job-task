@@ -17,7 +17,7 @@ public class DuplicateSearcher implements Searcher{
         repeating = new LinkedList<>();
     }
     public void search(){
-        int N = arr.length - 2;
+        int N = arr.length;
         if(N<0) throw new NotEnoughSizeException();
         for (int i=0; i<N; i++){
             int cur = arr[i];
